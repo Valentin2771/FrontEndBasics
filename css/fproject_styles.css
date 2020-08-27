@@ -1,0 +1,282 @@
+/* Idiocratic News styles */
+html{
+box-sizing:border-box;
+}
+*, *:before, *:after{
+box-sizing:inherit;
+}
+
+/* clasele pentru stilizarea elementelor html si a itemilor 'logo' si 'ads' */
+
+.body{
+	background:#f0ffff;
+	background:-webkit-linear-gradient(left, #f0ffff, #87ceeb);
+	background:-o-linear-gradient(right, #f0ffff, #87ceeb);
+	background:-moz-linear-gradient(right, #f0ffff, #87ceeb);
+	background:linear-gradient(to right, #f0ffff, #87ceeb);
+	font-family:"Droid Serif", "Times New Roman", Times, serif;
+}
+
+.body a{
+	text-decoration:none;
+	color:#fff;
+}
+
+.wrapper{
+	width:95%;
+	margin:0 auto 1em;
+}
+
+h1, h2, h3, h4{
+	text-align:center;
+}
+
+.bottom-line{
+	border-bottom:1px solid darkgray;
+	padding:.3em;
+}
+
+.upper-line{
+	border-top:1px solid darkgray;
+	padding:.3em;
+}
+
+.article{
+	/*border:1px dashed fuchsia;*/
+	margin:.3em;
+	padding:.5em;
+	background:#f0ffff;
+	background:-webkit-linear-gradient(left, rgba(135, 206, 235, 1), rgba(255, 255, 255, .7), rgba(240, 255, 255, 0));
+	background:-o-linear-gradient(right, rgba(135, 206, 235, 1), rgba(255, 255, 255, .7), rgba(240, 255, 255, 0));
+	background:-moz-linear-gradient(right, rgba(135, 206, 235, 1), rgba(255, 255, 255, .7), rgba(240, 255, 255, 0));
+	background:linear-gradient(to right, rgba(135, 206, 235, 1), rgba(255, 255, 255, .7), rgba(240, 255, 255, 0));	
+}
+
+.logo{
+	background:lightgray;
+	background-image:url("../img/animals-1060584_640-1.jpg");
+	font-size:1.59em;
+	color:rgba(228, 128, 255, .6)
+}
+
+h1{
+	position:relative;
+	top:1em;
+}
+
+.ads{
+	background:lightgray;
+	background-image:url("../img/monkey-1346590_640-1.jpg");
+	text-align:right;
+	color:rgba(220, 220, 220, .8);
+}
+
+.logo, .ads{
+	background-size:cover;
+	padding:.5em;
+	text-shadow:2px -4px 6px #000; /*#00008B*/
+	box-shadow:3px 5px 5px 4px #aaa;
+}
+
+.ads h2{
+	position:relative;
+	bottom:1em;
+	text-align:right;
+}
+
+.navbar{
+	background:lavender;
+	background:-webkit-linear-gradient(rgba(220, 220, 220, 1), rgba(240, 255, 255, 0));
+	background:-o-linear-gradient(rgba(220, 220, 220, 1), rgba(240, 255, 255, 0));
+	background:-moz-linear-gradient(rgba(220, 220, 220, 1), rgba(240, 255, 255, 0));
+	background:linear-gradient(rgba(220, 220, 220, 1), rgba(240, 255, 255, 0));
+	padding:1em;
+	/*border:1px solid red;*/
+}
+
+.navbar:nth-child(3) li{
+	word-spacing:1em;
+}
+
+.navbar .col-two{
+	text-align:right;
+}
+
+/* clasele pentru layout */
+
+/* sablon cu maxim 5 coloane */
+.col-one{
+width:19%;
+margin:.2em .5%;
+/* border:1px solid darkslategray; */
+}
+
+.col-two{
+width:38%;
+margin:.2em 1%;
+}
+
+.col-three{
+width:57%;
+margin:.2em 1.5%;
+}
+
+.col-one, .col-two, .col-three{
+display:inline-block;
+vertical-align:top;
+}
+
+/* sablon trei coloane cu float */
+
+.floated-left{
+	float:left;
+	max-width:31.3333%;
+	margin:1%;
+	background:rgba(200, 200, 200, .6);
+	background:-webkit-linear-gradient(rgba(200, 200, 200, .6), rgba(240, 255, 255, 0));
+	background:-o-linear-gradient(rgba(200, 200, 200, .6), rgba(240, 255, 255, 0));
+	background:-moz-linear-gradient(rgba(200, 200, 200, .6), rgba(240, 255, 255, 0));
+	background:linear-gradient(rgba(200, 200, 200, .6), rgba(240, 255, 255, 0));
+	padding:.5em;
+}
+
+/* sablon doua coloane cu float */
+
+.floated-left-two{
+	float:left;
+	max-width:49%;
+	margin:.5%;
+	padding:.5em;
+	border-right:1px solid darkgray;
+}
+
+/* clearfix */
+
+.group:before, .group:after{
+	display:table;
+	content:"";
+}
+
+.group:after{
+	clear:both;
+}
+
+
+.img-responsive{
+	display:block;
+	max-width:100%;
+	height:auto;
+}
+
+/* imagine inconjurata de text */
+
+.img-floated{
+	max-width:50%;
+	height:auto;
+	padding:.5em;
+	float:left;
+}
+
+.latest{
+	border-right:1px solid darkgray;
+}
+
+.more{
+	display:none;
+}
+
+.top{
+	position:fixed;
+	display:inline-block;
+	padding:.2em;
+	right:1%;
+	top:400px;
+	background:rgba(0,0,128,.3);
+	box-shadow:2px -4px 4px gray;
+}
+
+/* toate listele din pagina sunt afisate orizontal */
+
+.list{
+	display:inline-block;
+}
+
+.list li{
+	display:inline-block;
+	padding:.5em 1em;
+	margin:.2em 0;
+	list-style-type:none;
+	background:deepskyblue;
+	color:#fff;
+}
+
+.list li:hover{
+	background:darkslateblue;
+}
+
+.footer p{
+	display:inline-block;
+	margin-left:55%;
+}
+
+
+/* problema referitoare la fieldset */
+
+.field{
+		border:1px groove lightgray;
+		padding:.2em;
+		margin:0;
+}
+
+/* device-uri sub 768px width: coloanele cu latimi relative de 2/5 x parent width si 3/5 x parent width create cu inline-block se vor redimensiona pe intreaga latime a viewport-ului si vor pozitiona una sub alta */
+
+@media screen and (max-width:767px)
+{
+	.body{
+		font-size:.9em;
+	}
+	
+	.col-three, .col-two{
+		display:block;
+		width:100%;
+	}
+	.img-floated{
+		max-width:70%;
+	}
+	
+	.footer p{
+		margin-left:initial;
+	}
+}
+
+/* device-uri cu rezolutie mica, sub 480 px: coloanele de 1/5 cu inline-block si cele de 1/2 create cu float se redimensioneaza pe toata latimea viewport-ului. Alterarea stilurilor initiale generata la breakpoint-ul anterior se mentine. */
+
+@media screen and (max-width:479px){
+	
+	.body{
+		font-size:.95em;
+	}
+	
+	.col-one{
+		display:block;
+		width:100%;
+	}
+	.floated-left{
+		float:none;
+		max-width:100%;
+	}
+	
+	.img-floated{
+		display:block;
+		max-width:100%;
+		height:auto;
+		float:none;
+	}
+	/*
+	.list {
+		display:block;
+	}*/
+	.navbar:nth-child(3) li{
+	word-spacing:initial;
+}
+}
