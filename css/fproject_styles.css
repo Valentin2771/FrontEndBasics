@@ -14,7 +14,7 @@ box-sizing:inherit;
 	background:-o-linear-gradient(right, #f0ffff, #87ceeb);
 	background:-moz-linear-gradient(right, #f0ffff, #87ceeb);
 	background:linear-gradient(to right, #f0ffff, #87ceeb);
-	font-family:"Roboto Slab", serif;
+	font-family:"Ubuntu", sans-serif;
 }
 
 .body a{
